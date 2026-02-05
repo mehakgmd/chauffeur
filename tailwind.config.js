@@ -31,9 +31,23 @@ export default {
         // The subtle gradient behind the Hero Car
         'hero-gradient': "radial-gradient(circle at 50% 50%, #2a2a2a 0%, #0a0a0a 100%)",
       },
+      animation: {
+spotlight: "spotlight 2.5s cubic-bezier(0.16, 1, 0.3, 1) .6s forwards",
+      },
+      keyframes: {
+        spotlight: {
+          "0%": {
+  opacity: 0,
+  transform: "translate(-60%, -30%) scale(0.3)",
+},
+"100%": {
+  opacity: 1,
+  transform: "translate(-50%, -10%) scale(1)",
+},
+
+        },
     },
   },
+},
   plugins: [],
 };
-
-
